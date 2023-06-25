@@ -4,6 +4,21 @@ export default function DashBoard() {
   return (
     <div>
       <h1>Dashboard_page</h1>
+      <div className='linearGradient-1'>
+        https://developer.mozilla.org/zh-CN/docs/Web/CSS/radial-gradient
+      </div>
+      <div className='linearGradient-2'>
+        https://developer.mozilla.org/zh-CN/docs/Web/CSS/repeating-linear-gradient
+      </div>
+      <div className='linearGradient-3'>
+        https://developer.mozilla.org/zh-CN/docs/Web/CSS/linear-gradient
+      </div>
+      <div className='linearGradient-4'>
+        https://developer.mozilla.org/zh-CN/docs/Web/CSS/linear-gradient
+      </div>
+      <div className='wave-button'>
+        你好
+      </div>
     </div>
   )
 }

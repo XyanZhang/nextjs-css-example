@@ -6,6 +6,17 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --theme1: 155, 171, 184;
+  --theme1-1: 238, 227, 203;
+  --theme1-2: 215, 192, 174;
+  --theme1-3: 150, 126, 118;
+}
+:root{
+  --theme1: rgb(245, 239, 231);
+  --theme1-1: rgb(216, 196, 182);
+  --theme1-2: rgb(79, 112, 156);
+  --theme1-3: rgb(33, 53, 85);
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,7 +29,5 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: 
-    linear-gradient(180deg,#dbf4ff,#fff1f1) 
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(var(--theme1),var(--theme1-3));
 }
