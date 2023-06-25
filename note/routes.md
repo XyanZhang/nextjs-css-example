@@ -37,3 +37,22 @@ export default function RootLayout({
   )
 }
 ```
+
+template 用法说明: template 会被包裹在 layout 中，可以用于定义一些公共的逻辑, 子路由可以通过 `useTemplateData` 获取到 template 中的数据
+
+Modifying `<head>`
+
+> 修改 head 属性用于 seo
+
+```tsx
+
+import { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Next.js',
+}
+ 
+export default function Page() {
+  return '...'
+}
+```
