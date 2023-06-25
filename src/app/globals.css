@@ -26,8 +26,3 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(var(--theme1),var(--theme1-3));
-}
