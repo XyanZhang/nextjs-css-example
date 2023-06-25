@@ -4,7 +4,7 @@ import './index.css'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 max-sm:p-12">
       <section className='w-full'>
         <div className='text-center'>
           <h1 className="text-5xl font-mono font-semibold animate-bounce-in text-transparent bg-clip-text bg-gradient-to-r from-[var(--theme1-2)] to-[var(--theme1-3)]">好看のCSS </h1>
