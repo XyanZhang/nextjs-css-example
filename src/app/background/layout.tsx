@@ -1,12 +1,14 @@
+import { Navigation } from "@/components/navigation";
+import { navList } from "@/config/nav.config";
+
 export default function BackgroundLayout({
   children, // will be a page or nested layout
 }: {
   children: React.ReactNode
 }) {
-  let routeParam = "some-route-param";
   return (
     <section>
-      <nav></nav>
+      <Navigation navLinks={navList}></Navigation>
       {children}
     </section>
   )
