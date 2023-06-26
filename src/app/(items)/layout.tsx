@@ -14,7 +14,10 @@ export default function Layout({
           <Navigation navLinks={navList}></Navigation>
         </div>
         <div className="flex-1">
-          {children}
+          <div className="min-h-screen border-2 border-[var(--theme1-1)]">
+            <h1 className="font-bold text-[var(--theme1-3)] text-3xl text-center">xxx</h1>
+            {children}
+          </div>
         </div>
       </section>
   )
