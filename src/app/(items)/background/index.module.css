@@ -1,0 +1,8 @@
+.base {
+  display: flex;
+  justify-content: space-around;
+}
+.base li{
+  width: 60px;
+  height: 60px;
+}
