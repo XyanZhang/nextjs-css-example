@@ -7,9 +7,10 @@ export default function Layout({
 }: {
   children: React.ReactNode
 }) {
+  //  bg-[var(--theme1-3)]
   return (
-      <section className="flex flex-row">
-        <div className={`w-200px max-h-screen max-md:w-0 overflow-hidden ${styles.asideTransition}`}>
+      <section className={`flex flex-row`}>
+        <div className={`w-200px max-h-screen overflow-y-scroll max-md:w-0 ${styles.asideTransition}`}>
           <Navigation navLinks={navList}></Navigation>
         </div>
         <div className="flex-1">

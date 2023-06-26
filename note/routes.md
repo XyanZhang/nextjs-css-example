@@ -75,3 +75,6 @@ app
 ├── page.tsx
 ├── layout.tsx
 ```
+
+## Navigation 工作原理
+

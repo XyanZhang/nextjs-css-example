@@ -2,3 +2,18 @@
 .asideTransition {
   transition: width .66s cubic-bezier(0.66, 0, 0.01, 1);
 }
+.asideTransition::-webkit-scrollbar {
+  width: 8px;
+}
+.asideTransition::-webkit-scrollbar-track {
+  background-color: var(--theme1);
+}
+
+.asideTransition::-webkit-scrollbar-thumb {
+  background-color: var(--theme1-2);
+  border-radius: 4px;
+}
+.asideTransition::-webkit-scrollbar-thumb:hover {
+  background-color: var(--theme1-3);
+  transition: all .66s cubic-bezier(0.66, 0, 0.01, 1);
+}

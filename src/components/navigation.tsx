@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export function Navigation({ navLinks }: { navLinks: any[] }) {
   return (
-    <div className="flex flex-col h-screen bg-gray-200">
+    <div className="flex flex-col">
       {navLinks.map((link, index) => {
         return <NavItem key={link.title+index} link={link}></NavItem>
       })}
@@ -18,7 +18,7 @@ function NavItem({ link }: { link: any}) {
   const isActive = pathname.startsWith(link.url)
   return (
     <Link
-      className={`${isActive ? 'text-red-800' : 'text-black'} m-0.5 block py-2 rounded-2 text-center font-semibold truncate`}
+      className={`${isActive ? 'text-[var(--theme1-1)]' : 'text-[var(--theme1-2)]'} m-0.5 py-2 block rounded-md text-center font-semibold truncate bg-[var(--theme1-3)]`}
       href={link.url}
       key={link.title}
       target={link.target || '_self'}
