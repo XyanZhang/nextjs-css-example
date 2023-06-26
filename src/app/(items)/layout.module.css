@@ -6,11 +6,11 @@
   width: 8px;
 }
 .asideTransition::-webkit-scrollbar-track {
-  background-color: var(--theme1);
+  background: linear-gradient(var(--theme1),var(--theme1-3));
 }
 
 .asideTransition::-webkit-scrollbar-thumb {
-  background-color: var(--theme1-2);
+  background-color: var(--theme1);
   border-radius: 4px;
 }
 .asideTransition::-webkit-scrollbar-thumb:hover {
