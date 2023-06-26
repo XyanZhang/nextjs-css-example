@@ -8,9 +8,9 @@ export function Navigation({ navLinks }: { navLinks: any[] }) {
  
   return (
     <>
+    <div className="flex flex-col h-screen bg-gray-200">
       {navLinks.map((link) => {
         const isActive = pathname.startsWith(link.url)
-        console.log(isActive)
         return (
           <Link
             className={isActive ? 'text-red-800' : 'text-black'}
@@ -21,6 +21,7 @@ export function Navigation({ navLinks }: { navLinks: any[] }) {
           </Link>
         )
       })}
+      </div>
     </>
   )
 }
