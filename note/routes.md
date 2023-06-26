@@ -61,6 +61,8 @@ export default function Page() {
 
 ### 组织路由不影响URL
 
+source: <https://nextjs.org/docs/app/building-your-application/routing/route-groups>
+
 ```md
 app
 ├── (features) // 使用括号包裹
