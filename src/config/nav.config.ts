@@ -1,11 +1,11 @@
 export let navList = [{
-  title: 'background 运用1',
+  title: 'background 运用',
   url: '/background',
   desp: '利用 background 绘制css复杂图形'
 },{
-  title: 'background 运用2',
-  url: '/background2',
-  desp: '利用 background 绘制css复杂图形'
+  title: 'loading 运用',
+  url: '/loading',
+  desp: '利用 loading 绘制css复杂图形'
 },{
   title: 'background 运用3',
   url: '/background3',

@@ -1,5 +1,4 @@
 import { navList } from '@/config/nav.config'
-import Image from 'next/image'
 import './index.css'
 import Link from 'next/link'
 
@@ -18,7 +17,7 @@ export default function Home() {
               return (
                 // 一个小卡片，展示标题，描述，点击跳转到对应的页面，每个卡片使用不同的主题色
                 <li key={index} className='relative'>
-                  <Link href={item.url} target='_blank' className='block w-full h-full'>
+                  <Link href={item.url} target='_self' className='block w-full h-full'>
                     <div className={`w-full h-full bg-gradient-to-r from-[var(--theme1-2)] to-[var(--theme1-3)] rounded-lg shadow-lg transform transition duration-300 hover:scale-105`}>
                       <div className='flex flex-col justify-between h-full p-4'>
                         <div className='text-xl font-semibold text-[var(--theme1)]'>{item.title}</div>
