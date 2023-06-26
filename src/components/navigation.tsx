@@ -18,7 +18,7 @@ function NavItem({ link }: { link: any}) {
   const isActive = pathname.startsWith(link.url)
   return (
     <Link
-      className={`${isActive ? 'text-white' : 'text-[var(--theme1-2)]'} m-0.5 py-2 block rounded-md text-center font-semibold truncate bg-[var(--theme1-3)]`}
+      className={`${isActive ? 'text-white' : 'text-[var(--theme1-2)]'} hover:text-white m-0.5 transition-all py-2 block rounded-md text-center font-semibold truncate bg-[var(--theme1-3)]`}
       href={link.url}
       key={link.title}
       target={link.target || '_self'}
