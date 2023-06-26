@@ -1,0 +1,4 @@
+
+.asideTransition {
+  transition: width .66s cubic-bezier(0.66, 0, 0.01, 1);
+}
