@@ -56,3 +56,20 @@ export default function Page() {
   return '...'
 }
 ```
+
+## 路由分组
+
+### 组织路由不影响URL
+
+```md
+app
+├── (features) // 使用括号包裹
+│   ├── metadata // => 该文件对应路由为：/metadata 
+│   │   └── page.tsx
+│   ├── layout.tsx
+│   ├── template.tsx
+│   ├── loading.tsx
+│   └── error.tsx
+├── page.tsx
+├── layout.tsx
+```
