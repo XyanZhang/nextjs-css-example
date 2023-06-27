@@ -18,7 +18,6 @@
 .cycleStripe {
   background: repeating-linear-gradient(
     45deg,
-    45deg,
     white,
     white 11px,
     transparent 11px,
