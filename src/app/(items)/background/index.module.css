@@ -2,7 +2,26 @@
   display: flex;
   justify-content: space-around;
 }
-.base li{
+.base li {
   width: 60px;
   height: 60px;
+}
+.noStripe {
+  background: linear-gradient(
+    45deg,
+    white,
+    white 11px,
+    transparent 11px,
+    transparent 20px
+  );
+}
+.cycleStripe {
+  background: repeating-linear-gradient(
+    45deg,
+    45deg,
+    white,
+    white 11px,
+    transparent 11px,
+    transparent 20px
+  );
 }

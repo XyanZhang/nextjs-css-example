@@ -22,6 +22,8 @@ export default function BackgroundCSS(props:any) {
         <li className="border-black bg-gradient-to-br from-white from-50%  to-transparent to-50%"></li>
         <li className="bg-gradient-radial from-white to-black"></li>
         <li className="bg-gradient-conic from-white to-black"></li>
+        <li className={`bg-black ${styles.noStripe}`}></li>
+        <li className={`bg-black ${styles.cycleStripe}`}></li>
       </ul>
     </div>
   )
