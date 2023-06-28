@@ -26,3 +26,11 @@ background-image:
 
 ### 线性渐变
 
+线性渐变（径向渐变、角向渐变）是不支持 animation 的，支持单色的 background。
+
+背景色渐变动画实现？
+
++ background-position 的移动模拟
++ background-size 的缩放模拟
++ 外层的大渐变图形的移动（transform）来模拟渐变动画
+
