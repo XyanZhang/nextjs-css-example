@@ -24,6 +24,8 @@ export default function BackgroundCSS(props:any) {
         <li className="bg-gradient-conic from-white to-black"></li>
         <li className={`bg-black ${styles.noStripe}`}></li>
         <li className={`bg-black ${styles.cycleStripe}`}></li>
+        <li className={`bg-black ${styles['wave-button']}`}></li>
+        <li className={`bg-black ${styles['flow-wave']}`}></li>
       </ul>
     </div>
   )
