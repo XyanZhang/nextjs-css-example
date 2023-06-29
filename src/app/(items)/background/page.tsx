@@ -1,6 +1,8 @@
 import { Metadata } from "next"
 import { navList } from "@/config/nav.config"
 import styles from './index.module.css'
+import scssStyles from './index.module.scss';
+
 let currentNav = navList[0];
 export default function BackgroundCSS(props:any) {
   return (
@@ -26,6 +28,11 @@ export default function BackgroundCSS(props:any) {
         <li className={`bg-black ${styles.cycleStripe}`}></li>
         <li className={`bg-black ${styles['wave-button']}`}></li>
         <li className={`bg-black ${styles['flow-wave']}`}></li>
+      </ul>
+      <br />
+      <ul className={styles.base}>
+        <li className={`rounded-[50%] ${styles.colorPanel}`}></li>
+        <li className={`rounded-[50%] ${scssStyles.colorPanelBetter}`}></li>
       </ul>
     </div>
   )

@@ -69,3 +69,7 @@
   from { background-position-x: -10px, 0; }
   to { background-position-x: -30px, -20px; }
 }
+
+.colorPanel {
+  background: conic-gradient(red, orange, yellow, green, teal, blue, purple);
+}
