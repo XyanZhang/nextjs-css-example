@@ -47,6 +47,18 @@ export default function BackgroundCSS(props:any) {
         <li className={`${scssStyles.gradientAni3}`}></li>
         <li className={`${scssStyles.gradientAni4}`}></li>
       </ul>
+      <br />
+      <ul className={styles.base2}>
+        <li className={`${scssStyles.clipBorder}`}></li>
+        <li className={`${scssStyles.clipPadding}`}></li>
+        <li className={`${scssStyles.clipContent}`}></li>
+      </ul>
+      <br />
+      <ul className={styles.base2}>
+        <li className={`${scssStyles.backgroundClip}`}>CLIP</li>
+        <li className={`${scssStyles.backgroundGradientClip}`}>XyanZhang</li>
+        <li className={`${scssStyles.backgroundGradientAniClip}`}>XyanZhang</li>
+      </ul>
     </div>
   )
 }

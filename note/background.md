@@ -34,3 +34,13 @@ background-image:
 + background-size 的缩放模拟
 + 外层的大渐变图形的移动（transform）来模拟渐变动画
 
+### background-clip
+
+```css
+{
+    background-clip: border-box;  // 背景延伸到边框外沿（但是在边框之下）
+    background-clip: padding-box; // 边框下面没有背景，即背景延伸到内边距外沿。
+    background-clip: content-box; // 背景裁剪到内容区 (content-box) 外沿。
+    backgrounc-clip: text; 
+}
+```
