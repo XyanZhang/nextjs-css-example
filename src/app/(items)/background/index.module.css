@@ -1,10 +1,15 @@
+.base2,
 .base {
   display: flex;
   justify-content: space-around;
 }
 .base li {
-  width: 60px;
-  height:60px;
+  width: 120px;
+  height: 120px;
+}
+.base2 li {
+  width: 120px;
+  height: 120px;
 }
 .noStripe {
   background: linear-gradient(

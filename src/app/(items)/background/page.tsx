@@ -34,6 +34,19 @@ export default function BackgroundCSS(props:any) {
         <li className={`rounded-[50%] ${styles.colorPanel}`}></li>
         <li className={`rounded-[50%] ${scssStyles.colorPanelBetter}`}></li>
       </ul>
+      <br />
+      <ul className={styles.base2}>
+        <li className={`${scssStyles.strangeDrawing}`}></li>
+        <li className={`${scssStyles.strangeDrawing2}`}></li>
+        <li className={`${scssStyles.strangeDrawing3}`}></li>
+      </ul>
+      <br />
+      <ul className={styles.base2}>
+        <li className={`${scssStyles.gradientAni}`}></li>
+        <li className={`${scssStyles.gradientAni2}`}></li>
+        <li className={`${scssStyles.gradientAni3}`}></li>
+        <li className={`${scssStyles.gradientAni4}`}></li>
+      </ul>
     </div>
   )
 }

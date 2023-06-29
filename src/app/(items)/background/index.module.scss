@@ -11,3 +11,91 @@ $totalStops:20;
   background: conic-gradient($colors);
   border-radius: 50%;
 }
+
+.strangeDrawing {
+  background: repeating-conic-gradient(#fff, #000, #fff 30deg);
+}
+.strangeDrawing2 {
+  background: repeating-conic-gradient(#fff, #000, #fff 1deg);
+}
+.strangeDrawing3 {
+  background: repeating-conic-gradient(#fff, #000, #fff 0.1deg);
+}
+
+.gradientAni {
+  background: linear-gradient(90deg,  #ffc700 0%, #e91e1e 33%, #6f27b0 66%, #00ff88 100%);
+  background-position: 100% 0;
+  animation: bgSize 5s infinite ease-in-out alternate;
+}
+@keyframes bgSize {
+  0% {
+      background-size: 300% 100%;
+  }
+  100% {
+      background-size: 100% 100%;
+  }
+}
+.gradientAni2 {
+  background: linear-gradient(90deg,  #ffc700 0%, #e91e1e 33%, #6f27b0 66%, #00ff88 100%);
+  background-position: 100% 0;
+  animation: bgposition 5s infinite ease-in-out alternate;
+}
+@keyframes bgposition {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: 100% 0;
+  }
+}
+
+.gradientAni3 {
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+      content: "";
+      position: absolute;
+      top: -100%;
+      left: -100%;
+      bottom: -100%;
+      right: -100%;
+      background: linear-gradient(45deg,  #ffc700 0%, #e91e1e 50%, #6f27b0 100%);
+      background-size: 100% 100%;
+      animation: bgposition3 5s infinite linear alternate;
+      z-index: -1;
+  }
+}
+
+
+@keyframes bgposition3 {
+  0% {
+      transform: translate(30%, 30%);
+  }
+  25% {
+      transform: translate(30%, -30%);
+  }
+  50% {
+      transform: translate(-30%, -30%);
+  }
+  75% {
+      transform: translate(-30%, 30%);
+  }
+  100% {
+      transform: translate(30%, 30%);
+  }
+}
+
+.gradientAni4 {
+  background: linear-gradient(45deg, #5fddcc, #ff004d);
+  animation: hueRotate 10s infinite alternate;
+}
+
+@keyframes hueRotate {
+  0% {
+      filter: hue-rotate(0);
+  }
+  100% {
+      filter: hue-rotate(360deg);
+  }
+}
