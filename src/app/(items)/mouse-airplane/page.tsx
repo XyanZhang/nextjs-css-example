@@ -14,7 +14,7 @@ export default function BackgroundCSS() {
   }, [])
   return (
     <div>
-      <div className="fixed text-[#FFEB3B] text-2xl" id="plane" ref={ref as RefObject<HTMLDivElement>}>
+      <div className="fixed text-[#FFEB3B] text-2xl pointer-events-none" id="plane" ref={ref as RefObject<HTMLDivElement>}>
         🛨
       </div>
     </div>
