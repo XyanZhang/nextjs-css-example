@@ -7,9 +7,9 @@ export let navList = [{
   url: '/loading',
   desp: '利用 loading 绘制css复杂图形'
 },{
-  title: 'background 运用3',
-  url: '/background3',
-  desp: '利用 background 绘制css复杂图形'
+  title: 'mouse air',
+  url: '/mouse-airplane',
+  desp: '跟随鼠标的小飞机'
 },{
   title: 'background 运用4',
   url: '/background4',
