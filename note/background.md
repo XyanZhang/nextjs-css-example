@@ -43,4 +43,9 @@ background-image:
     background-clip: content-box; // 背景裁剪到内容区 (content-box) 外沿。
     backgrounc-clip: text; 
 }
+/* 搭配使用 */
+{
+  color: transparent; // 文字透明
+  backgrounc-clip: text; // 背景裁剪到文字
+}
 ```

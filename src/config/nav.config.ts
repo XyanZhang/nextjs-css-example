@@ -19,9 +19,9 @@ export let navList = [{
   url: '/view-scroll',
   desp: '利用 background 制作的视差滚动'
 },{
-  title: 'background 运用6',
-  url: '/background6',
-  desp: '利用 background 绘制css复杂图形'
+  title: 'mask 转场',
+  url: '/mask-switch',
+  desp: '利用 masl 实现复杂转场'
 },{
   title: 'background 运用7',
   url: '/background7',
