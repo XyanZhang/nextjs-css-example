@@ -2,6 +2,10 @@
 
 nextjs 如何忽略某一级静态路由？
 
+> 文件夹名称使用 `[]`进行配置
+
+重定向
+
 ```js
 module.exports = {
   async rewrites() {
@@ -30,7 +34,7 @@ nextjs 使用app router 和使用pages的区别？
 
 服务端组件和客户端组件使用场景？
 
-| what do you want do?  | Server Component | Client Component |
+| what do you want to do?  | Server Component | Client Component |
 |------------------|------------------|------------------|
 | Fetch data.      | ✅ | ❌ |
 | Access backend resources (directly) | ✅ | ❌ |
@@ -41,6 +45,3 @@ nextjs 使用app router 和使用pages的区别？
 | Use browser-only APIs | ❌ | ✅ |
 | Use custom hooks that depend on state, effects, or browser-only APIs | ❌ | ✅ |
 | Use React Class components | ❌ | ✅ |
-
-写一下emoji 选中符
-
