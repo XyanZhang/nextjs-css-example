@@ -15,9 +15,9 @@ export let navList = [{
   url: '/buttons',
   desp: 'https://cssfx.netlify.app/ 网站的各种酷炫按钮'
 },{
-  title: 'background 运用5',
-  url: '/background5',
-  desp: '利用 background 绘制css复杂图形'
+  title: '视差滚动',
+  url: '/view-scroll',
+  desp: '利用 background 制作的视差滚动'
 },{
   title: 'background 运用6',
   url: '/background6',
