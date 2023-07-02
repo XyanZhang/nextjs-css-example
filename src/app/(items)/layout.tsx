@@ -13,7 +13,7 @@ export default function Layout({
   const pathname = usePathname();
   let currentNav = navList.find(item => pathname.startsWith(item.url));
   return (
-      <section className={`flex flex-row`}>
+      <section className={`flex flex-row min-h-[100vh]`}>
         <div className={`w-200px max-h-screen overflow-y-scroll max-md:w-0 ${styles.asideTransition}`}>
           <Navigation navLinks={navList}></Navigation>
         </div>
