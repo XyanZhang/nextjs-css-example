@@ -26,3 +26,26 @@ background-image:
 
 ### 线性渐变
 
+线性渐变（径向渐变、角向渐变）是不支持 animation 的，支持单色的 background。
+
+背景色渐变动画实现？
+
++ background-position 的移动模拟
++ background-size 的缩放模拟
++ 外层的大渐变图形的移动（transform）来模拟渐变动画
+
+### background-clip
+
+```css
+{
+    background-clip: border-box;  // 背景延伸到边框外沿（但是在边框之下）
+    background-clip: padding-box; // 边框下面没有背景，即背景延伸到内边距外沿。
+    background-clip: content-box; // 背景裁剪到内容区 (content-box) 外沿。
+    backgrounc-clip: text; 
+}
+/* 搭配使用 */
+{
+  color: transparent; // 文字透明
+  backgrounc-clip: text; // 背景裁剪到文字
+}
+```

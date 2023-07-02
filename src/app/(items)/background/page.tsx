@@ -1,6 +1,8 @@
 import { Metadata } from "next"
 import { navList } from "@/config/nav.config"
 import styles from './index.module.css'
+import scssStyles from './index.module.scss';
+
 let currentNav = navList[0];
 export default function BackgroundCSS(props:any) {
   return (
@@ -24,6 +26,38 @@ export default function BackgroundCSS(props:any) {
         <li className="bg-gradient-conic from-white to-black"></li>
         <li className={`bg-black ${styles.noStripe}`}></li>
         <li className={`bg-black ${styles.cycleStripe}`}></li>
+        <li className={`bg-black ${styles['wave-button']}`}></li>
+        <li className={`bg-black ${styles['flow-wave']}`}></li>
+      </ul>
+      <br />
+      <ul className={styles.base}>
+        <li className={`rounded-[50%] ${styles.colorPanel}`}></li>
+        <li className={`rounded-[50%] ${scssStyles.colorPanelBetter}`}></li>
+      </ul>
+      <br />
+      <ul className={styles.base2}>
+        <li className={`${scssStyles.strangeDrawing}`}></li>
+        <li className={`${scssStyles.strangeDrawing2}`}></li>
+        <li className={`${scssStyles.strangeDrawing3}`}></li>
+      </ul>
+      <br />
+      <ul className={styles.base2}>
+        <li className={`${scssStyles.gradientAni}`}></li>
+        <li className={`${scssStyles.gradientAni2}`}></li>
+        <li className={`${scssStyles.gradientAni3}`}></li>
+        <li className={`${scssStyles.gradientAni4}`}></li>
+      </ul>
+      <br />
+      <ul className={styles.base2}>
+        <li className={`${scssStyles.clipBorder}`}></li>
+        <li className={`${scssStyles.clipPadding}`}></li>
+        <li className={`${scssStyles.clipContent}`}></li>
+      </ul>
+      <br />
+      <ul className={styles.base2}>
+        <li className={`${scssStyles.backgroundClip}`}>CLIP</li>
+        <li className={`${scssStyles.backgroundGradientClip}`}>XyanZhang</li>
+        <li className={`${scssStyles.backgroundGradientAniClip}`}>XyanZhang</li>
       </ul>
     </div>
   )

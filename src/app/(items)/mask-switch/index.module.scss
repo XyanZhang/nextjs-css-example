@@ -1,0 +1,38 @@
+.maskUse {
+  text-align: center;
+  height: 50vh;
+  position: relative;
+  section {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1000px;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+  }
+}
+
+.img1 {
+  background: url(/banner-1.jpg);
+}
+
+.img2 {
+  background: url(/banner-2.jpg);
+  mask: url(https://i.imgur.com/AYJuRke.png);
+  mask-size: 3000% 100%;
+}
+.img2:hover {
+  animation: maskMove 2s steps(29);
+}
+
+@keyframes maskMove {
+  from {
+      mask-position: 0 0;
+  }
+  to {
+      mask-position: 100% 0;
+  }
+}

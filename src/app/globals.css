@@ -33,3 +33,15 @@ body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(var(--theme1),var(--theme1-3));
 }
+/* 好看的滚动条样式 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(var(--foreground-rgb), 0.5);
+  border-radius: 10px;
+}

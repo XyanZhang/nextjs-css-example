@@ -18,7 +18,7 @@ export default function Layout({
           <Navigation navLinks={navList}></Navigation>
         </div>
         <div className="flex-1">
-          <div className="min-h-screen border-2 border-transparent">
+          <div className="max-h-screen overflow-y-scroll border-2 border-transparent">
             <h1 className="font-bold text-[var(--theme1-3)] text-3xl text-center">{currentNav?.title}</h1>
             {children}
           </div>

@@ -1,0 +1,17 @@
+.viewScroll {
+  text-align: center;
+  max-height: 50vh;
+  section {
+    width: 1000px;
+    height: 50vh;
+    background: url(/banner-1.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;  // 区域在变换，但是区域内的图片都是基于视口左上角进行定位的
+  }
+  section:first-child {
+    background-image: url(/banner-2.jpg);
+  }
+  section:last-child {
+    background-image: url(/banner-3.jpg);
+  }
+}
