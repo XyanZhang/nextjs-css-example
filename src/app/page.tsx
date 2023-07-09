@@ -1,7 +1,17 @@
+'use client'
 import { navList } from '@/config/nav.config'
 import './index.css'
 import Link from 'next/link'
+import MouseTrail from "@pjsalita/react-mouse-trail";
 
+const config = {
+  color: "#000000",
+  idleAnimation: true,
+  idleAnimationCount: 10,
+  inverted: true,
+  size: 20,
+  trailCount: 20,
+};
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 max-sm:p-12">
@@ -32,6 +42,8 @@ export default function Home() {
         </ul>
       </section>
       <p className='text-[var(--theme1-1)]'>创意来源：<a target="_blank" className='transition hover:text-[var(--theme1-3)]' href="https://colorhunt.co/palette/f5efe7d8c4b64f709c213555">Color Hunt</a>、<a target="_blank" className='transition hover:text-[var(--theme1-3)]' href="https://example.kuizuo.cn/">前端示例站</a></p>
+          
+      <MouseTrail {...config} />;
     </main>
   )
 }
