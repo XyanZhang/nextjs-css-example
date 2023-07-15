@@ -27,9 +27,9 @@ export let navList = [{
   url: '/mouse-follow-ball',
   desp: '跟随鼠标的小球'
 },{
-  title: 'loading 运用',
-  url: '/loading',
-  desp: '利用 loading 绘制css复杂图形'
+  title: 'clip use',
+  url: '/clip-use',
+  desp: 'clip use'
 },{
   title: 'background 运用3',
   url: '/background3',
