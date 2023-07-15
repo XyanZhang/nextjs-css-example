@@ -23,9 +23,9 @@ export let navList = [{
   url: '/mask-switch',
   desp: '利用 masl 实现复杂转场'
 },{
-  title: 'background 运用7',
-  url: '/background7',
-  desp: '利用 background 绘制css复杂图形'
+  title: '跟随鼠标的小球',
+  url: '/mouse-follow-ball',
+  desp: '跟随鼠标的小球'
 },{
   title: 'loading 运用',
   url: '/loading',
