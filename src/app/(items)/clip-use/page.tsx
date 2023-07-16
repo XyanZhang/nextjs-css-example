@@ -9,6 +9,10 @@ export default function ClipUse() {
         <li className={styles.circle}></li>
         <li className={styles.polygon}></li>
         <li className={styles.clipNotching}></li>
+        <li className={styles.arrow}></li>
+        <li className={styles.arrowLeft}>
+          <div></div>
+        </li>
       </ul>
     </div>
   )
