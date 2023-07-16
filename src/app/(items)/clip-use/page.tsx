@@ -1,10 +1,15 @@
 "use client";
 import { Metadata } from "next"
+import styles from './index.module.scss'
 
 export default function ClipUse() {
   return (
     <div className="text-center">
-      <h1>loading</h1>
+      <ul className={styles.base}>
+        <li className={styles.circle}></li>
+        <li className={styles.polygon}></li>
+        <li className={styles.clipNotching}></li>
+      </ul>
     </div>
   )
 }
