@@ -37,12 +37,14 @@ $img: 'https://mzz-files.oss-cn-shenzhen.aliyuncs.com///uploads/U1002433/0cb5e04
   }
 }
 @keyframes glitch-one {
-  // @for $i from 20 to 30 {
-  //   #{$i / 2}% {
-  //     left: #{randomNum(200, -100)}px;
-  //     clip-path: inset(#{randomNum(150, 30)}px 0 #{randomNum(150, 30)}px);
-  //   }
-  // }
+  @for $i from 20 to 30 {
+    $percentage: $i / 2 + '%'; // 计算百分比，不添加百分号
+    #{$percentage} {
+      // 此处增加百分号
+      left: #{randomNum(200, -100)}px;
+      clip-path: inset(#{randomNum(150, 30)}px 0 #{randomNum(150, 30)}px);
+    }
+  }
 
   15.5% {
     clip-path: inset(10px 0 320px);
@@ -144,6 +146,14 @@ $img: 'https://mzz-files.oss-cn-shenzhen.aliyuncs.com///uploads/U1002433/0cb5e04
 }
 
 @keyframes glitch-two {
+  @for $i from 40 to 50 {
+    $percentage: $i / 2 + '%'; // 计算百分比，不添加百分号
+    #{$percentage} {
+      // 此处增加百分号
+      left: #{randomNum(200, -100)}px;
+      clip-path: inset(#{randomNum(180)}px 0 #{randomNum(180)}px);
+    }
+  }
   25.5% {
     clip-path: inset(10px 0 320px);
     left: -20px;
