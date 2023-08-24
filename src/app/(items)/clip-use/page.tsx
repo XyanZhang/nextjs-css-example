@@ -14,6 +14,11 @@ export default function ClipUse() {
           <div></div>
         </li>
       </ul>
+      <br />
+      <ul className={styles.base}>
+        <li className={styles.aniBorder}></li>
+        <li className={styles.btnAniClip}>clip</li>
+      </ul>
     </div>
   )
 }
