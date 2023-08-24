@@ -180,12 +180,11 @@
     animation: crack2 1.5s linear forwards;
     // clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
     clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
-    
   }
   // &:hover::before {
   //   animation: crack1 2.5s linear forwards;
   // }
-    
+
   // &:hover::after {
   //   animation: crack2 2.5s linear forwards;
   // }
@@ -210,5 +209,20 @@
     100% {
       transform: translateX(10px);
     }
+  }
+}
+
+.btnOuter {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  transition: all 2s linear;
+  clip-path: circle(20px at 20px 20px);
+  background: #fff;
+
+  &:hover {
+    clip-path: circle(460px at 44px 44px);
+    background: #000000;
   }
 }

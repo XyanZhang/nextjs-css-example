@@ -22,6 +22,13 @@ export default function ClipUse() {
           <div data-text="Text Clip Crack" className={styles.clipText}><span>Text Clip Crack</span></div>
         </li>
       </ul>
+      <br />
+      <div className={styles.btnOuter}>
+      {/* 利用tailwind写一个按钮样式 */}
+      <button className="border">
+        点击
+      </button>
+      </div>
     </div>
   )
 }
