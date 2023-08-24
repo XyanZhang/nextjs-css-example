@@ -15,6 +15,10 @@ export default function ShadowUse() {
       <div className={styles.shadowBtn}>
         <div>浮雕阴影</div><div>浮雕阴影</div>
       </div>
+      <br />
+      <div className={styles.colorShadow}>
+        <span className={styles.avator}></span>
+      </div>
     </div>
   )
 }
