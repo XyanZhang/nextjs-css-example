@@ -18,6 +18,9 @@ export default function ClipUse() {
       <ul className={styles.base}>
         <li className={styles.aniBorder}></li>
         <li className={styles.btnAniClip}>clip</li>
+        <li>
+          <div data-text="Text Clip Crack" className={styles.clipText}><span>Text Clip Crack</span></div>
+        </li>
       </ul>
     </div>
   )

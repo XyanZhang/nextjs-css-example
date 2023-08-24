@@ -109,7 +109,7 @@
   text-align: center;
   line-height: 80px;
   background: var(--theme1-2);
-  height: 80px!important;
+  height: 80px !important;
   border-radius: 10px;
   &:hover {
     background: var(--theme1-3);
@@ -131,7 +131,7 @@
   }
   @keyframes clippath2 {
     0%,
-    100% {    
+    100% {
       // 控制内部裁剪区域，
       clip-path: inset(0 0 95% 0);
     }
@@ -143,6 +143,72 @@
     }
     75% {
       clip-path: inset(0 0 0 95%);
+    }
+  }
+}
+
+.clipText {
+  // margin: auto;
+  // padding: 10px;
+  // line-height: 1.2;
+  background: #490c0c;
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+  // animation: shake 2.5s linear forwards;
+  span {
+    position: relative;
+    clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
+  }
+
+  &::before,
+  &::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &::before {
+    animation: crack1 1.5s linear forwards;
+    // clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
+    clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
+  }
+
+  &::after {
+    animation: crack2 1.5s linear forwards;
+    // clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
+    clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
+    
+  }
+  // &:hover::before {
+  //   animation: crack1 2.5s linear forwards;
+  // }
+    
+  // &:hover::after {
+  //   animation: crack2 2.5s linear forwards;
+  // }
+
+  @keyframes crack1 {
+    0%,
+    95% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-10px);
+    }
+  }
+
+  @keyframes crack2 {
+    0%,
+    95% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(10px);
     }
   }
 }
