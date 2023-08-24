@@ -24,6 +24,13 @@ export default function ShadowUse() {
         <div className={styles.cicleColor}></div>
         <div className={styles.circleBlack}></div>
       </div>
+      <br />
+      <div className="flex justify-around h-20">
+        <span className={styles.copyBox}></span>
+        <span className={styles.copyDot}>标题</span>
+        <span className={styles.cloud}></span>
+        <span className={styles.multiBox}></span>
+      </div>
     </div>
   )
 }
