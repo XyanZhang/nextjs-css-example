@@ -1,6 +1,7 @@
 "use client";
 import { Metadata } from "next"
 import styles from './index.module.scss'
+import crackStyles from './crack.module.scss'
 
 export default function ClipUse() {
   return (
@@ -28,6 +29,10 @@ export default function ClipUse() {
       <button className="border">
         点击
       </button>
+      </div>
+      <br />
+      <div className={crackStyles.divImg}>
+        
       </div>
     </div>
   )
