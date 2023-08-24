@@ -1,0 +1,22 @@
+.shadowBox {
+  position: relative;
+  width: 600px;
+  height: 100px;
+  background: var(--theme1-2);
+  border-radius: 20px;
+}
+
+.shadowBox::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: 5%;
+  bottom: 0;
+  border-radius: 10px;
+  background: var(--theme1-3);
+  transform: translate(0, -25%) rotate(-3deg);
+  transform-origin: center center;
+  box-shadow: 0 0 20px 15px var(--theme1-3);
+  z-index: -1;
+}

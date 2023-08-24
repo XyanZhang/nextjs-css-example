@@ -31,9 +31,9 @@ export let navList = [{
   url: '/clip-use',
   desp: 'clip use'
 },{
-  title: 'background 运用3',
-  url: '/background3',
-  desp: '利用 background 绘制css复杂图形'
+  title: 'shadow 运用',
+  url: '/shadow',
+  desp: 'shadow 运用'
 },{
   title: 'background 运用4',
   url: '/background4',
