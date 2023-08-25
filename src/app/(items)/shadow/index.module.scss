@@ -230,10 +230,65 @@ $img: '/avatar-color.jpeg';
 
 .curve {
   margin: auto;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    animation: move 3s infinite linear;
-    background: #f00;
-    box-shadow: shadowSet(1px, 1px, #f00);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  animation: move 3s infinite linear;
+  background: #f00;
+  box-shadow: shadowSet(1px, 1px, #f00);
+}
+
+.hoverModal {
+  width: 200px;
+  height: 60px;
+  transition: all 0.2s;
+  &:hover {
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5); // 100vmax 为最大的视口宽度
+  }
+}
+
+.colorLight {
+  color: #fff;
+  transition: 0.2s;
+
+  // 只需要设置 3~n 层阴影效果，每一层的模糊半径（文字阴影的第三个参数）间隔较大，并且每一层的阴影颜色相同
+  &:hover {
+    text-shadow: 0 0 10px #0ebeff, 0 0 20px #0ebeff, 0 0 50px #0ebeff,
+      0 0 100px #0ebeff, 0 0 200px #0ebeff;
+  }
+}
+
+.textColor {
+  color: #333;
+  &:hover span {
+    animation: flicker 3s linear forwards;
+  }
+  &:hover span:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  &:hover span:nth-child(3)  {
+    animation-delay: 1s;
+  }
+  &:hover span:nth-child(4) {
+    animation-delay: 1.5s;
+  }
+}
+@keyframes flicker {
+  0% {
+    color: #333;
+  }
+  5%,
+  15%,
+  25%,
+  30%,
+  100% {
+    color: #fff;
+    text-shadow: 0px 0px 5px var(--theme1-2), 0px 0px 10px var(--theme1-2),
+      0px 0px 20px var(--theme1-2), 0px 0px 50px var(--theme1-2);
+  }
+  10%,
+  20% {
+    color: #333;
+    text-shadow: none;
+  }
 }

@@ -35,8 +35,22 @@ export default function ShadowUse() {
         <span className={styles.declineCircle2}></span>
       </div>
       <br />
-      <div className="flex justify-around h-40 items-center">
+      <div className="flex justify-around items-center">
         <span className={styles.curve}></span>
+      </div>
+      <br />
+      <div className="flex justify-around items-center">
+        <button className={styles.hoverModal}>hover modal</button>
+      </div>
+      <br />
+      <div className="flex justify-around items-center bg-black">
+        <button className={styles.colorLight}>color light</button>
+        <p className={styles.textColor}>
+          <span id="n">n</span>
+          <span id="e">e</span>
+          <span id="o">o</span>
+          <span id="n2">n</span>
+        </p>
       </div>
     </div>
   )
