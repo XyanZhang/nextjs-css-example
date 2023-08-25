@@ -5,7 +5,7 @@ import styles from './index.module.scss'
 export default function ShadowUse() {
 
   return (
-    <div className="h-screen">
+    <div className="h-screen mb-96">
       <div className={styles.shadowBox}></div>
       <br />
       <div className={styles.shadowText}>
@@ -25,11 +25,14 @@ export default function ShadowUse() {
         <div className={styles.circleBlack}></div>
       </div>
       <br />
-      <div className="flex justify-around h-20">
+      <div className="flex justify-around h-40 items-center">
         <span className={styles.copyBox}></span>
         <span className={styles.copyDot}>标题</span>
         <span className={styles.cloud}></span>
         <span className={styles.multiBox}></span>
+        <span className={styles.clickBtn}></span>
+        <span className={styles.declineCircle}></span>
+        <span className={styles.declineCircle2}></span>
       </div>
     </div>
   )

@@ -197,3 +197,30 @@ $img: '/avatar-color.jpeg';
     0 0 0 15px var(--theme1-3),
     0 2px 5px 15px #666;
 }
+.clickBtn {
+  width: 120px;
+  height: 64px;
+  background: #fc0;
+  border-radius: 20px;
+  border: 5px solid #333;
+  box-shadow: 
+      inset 0 -5px 0 #aaa,
+      inset 0 -10px 0 #000;
+}
+.declineCircle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid var(--theme1);
+  box-shadow: inset 0 12px 0 13px var(--theme1);
+  transform: rotate(-35deg);
+  transform: perspective(1000px) rotateX(60deg) rotateY(135deg);
+}
+
+.declineCircle2 {
+  width: 100px;
+  height: 60px;
+  border-radius: 100%;
+  box-shadow: inset 0 5px 0 6px #09c;
+  transform: rotate(-40deg);
+}
