@@ -34,6 +34,10 @@ export default function ShadowUse() {
         <span className={styles.declineCircle}></span>
         <span className={styles.declineCircle2}></span>
       </div>
+      <br />
+      <div className="flex justify-around h-40 items-center">
+        <span className={styles.curve}></span>
+      </div>
     </div>
   )
 }
