@@ -39,9 +39,9 @@ export let navList = [{
   url: '/transition',
   desp: '利用 transition 实现复杂动画'
 },{
-  title: 'background 运用5',
-  url: '/background5',
-  desp: '利用 background 绘制css复杂图形'
+  title: 'animation 运用',
+  url: '/animation',
+  desp: '利用 animation 绘制css复杂图形'
 },{
   title: 'background 运用6',
   url: '/background6',
