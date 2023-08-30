@@ -17,6 +17,22 @@ export default function AnimationCSS() {
           <span className={styles.item2}></span>
         </div>
       </div>
+      <div className="flex justify-around h-screen items-center">
+        <div className={styles.randomMove}>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        </div>
+      </div>
     </div>
   )
 }

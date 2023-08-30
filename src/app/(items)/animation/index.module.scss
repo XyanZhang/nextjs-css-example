@@ -69,3 +69,33 @@
     transform: rotate(360deg);
   }
 }
+
+.randomMove {
+  ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+  li {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #000;
+    animation: move 3s infinite 1s linear;
+    // animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  }
+  @for $i from 1 to 11 {
+    li:nth-child(#{$i}) {
+        animation-duration: #{random(10000)/1000 + 2}s;
+        animation-delay: #{random(1000)/1000 + 1}s;
+    }
+  }
+  @keyframes move {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, -300px);
+    }
+  }
+}
