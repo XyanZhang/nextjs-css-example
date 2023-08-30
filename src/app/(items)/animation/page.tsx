@@ -11,6 +11,11 @@ export default function AnimationCSS() {
           <span className={styles.item}></span>
           <span className={styles.item}></span>
         </div>
+        <div className={styles.loadingDelay}>
+          <span className={styles.item2}></span>
+          <span className={styles.item2}></span>
+          <span className={styles.item2}></span>
+        </div>
       </div>
     </div>
   )
