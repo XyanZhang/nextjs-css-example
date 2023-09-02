@@ -43,9 +43,9 @@ export let navList = [{
   url: '/animation',
   desp: '利用 animation 绘制css复杂图形'
 },{
-  title: 'background 运用6',
-  url: '/background6',
-  desp: '利用 background 绘制css复杂图形'
+  title: 'svg 动画',
+  url: '/svg',
+  desp: '利用 svg 绘制css复杂图形'
 },{
   title: 'background 运用7',
   url: '/background7',

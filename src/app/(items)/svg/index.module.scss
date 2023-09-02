@@ -1,0 +1,13 @@
+.rect {
+  width: 250px;
+  height: 50px;
+  stroke: #673ab7;
+  stroke-width: 2;
+  fill: transparent;
+  transition: all 1s;
+}
+.rect:hover {
+  stroke-width: 1;
+  fill: deeppink;
+  stroke: transparent;
+}
