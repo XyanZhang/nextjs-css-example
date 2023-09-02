@@ -11,3 +11,24 @@
   fill: deeppink;
   stroke: transparent;
 }
+.svgs svg{
+  width: 250px;
+  height: 50px;
+  margin-bottom: 20px;
+  rect {
+    width: 100%;
+    height: 100%;
+    stroke: #673ab7;
+    stroke-width: 2;
+    fill: transparent;
+  }
+}
+.rectSp1 {
+  stroke-dasharray: 10 10;// 虚线长度 虚线间宽度
+}
+.rectSp2 {
+  stroke-dasharray: 30 30;
+}
+.rectSp3 {
+  stroke-dasharray: 50 20;
+}
