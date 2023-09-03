@@ -43,6 +43,16 @@ export default function SVGCss() {
         <svg xmlns="http://www.w3.org/2000/svg">
           <rect className={styles.rectSp3} />
         </svg>
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <rect className={styles.rectSp4} />
+        </svg>
+      </div>
+      <div className="flex justify-around h-60 items-center">
+        <div className={styles.container}>
+          <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+            <rect className={styles.aniRect} />
+          </svg>
+        </div>
       </div>
     </div>
   );
