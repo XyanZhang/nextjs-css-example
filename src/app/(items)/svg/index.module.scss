@@ -52,10 +52,30 @@
   transition: all 1s;
 }
 .container{
-  &:hover .aniRect {
-    stroke: deeppink;
-    stroke-dasharray: 600 0;
-    stroke-dashoffset: 475;
-    stroke-width: 3px;
+  position: relative;
+  margin: auto;
+  width: 250px;
+  height: 50px;
+
+  &:hover {
+    .aniRect {
+      stroke: deeppink;
+      stroke-dasharray: 600 0;
+      stroke-dashoffset: 475;
+      stroke-width: 3px;
+    }
+    .text {
+      background: deeppink;
+      color: #fff;
+    }
   }
+}
+  
+.text {
+  position: absolute;
+  inset: 0;
+  transition: .3s;
+  transition-delay: .6s;
+  text-align: center;
+  line-height: 50px;
 }

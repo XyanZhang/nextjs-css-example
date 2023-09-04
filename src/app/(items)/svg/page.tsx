@@ -1,3 +1,4 @@
+"use client";
 import { Metadata } from 'next';
 import styles from './index.module.scss';
 
@@ -51,6 +52,12 @@ export default function SVGCss() {
         <div className={styles.container}>
           <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
             <rect className={styles.aniRect} />
+            <foreignObject width="100%" height="100%">
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <span className={styles.text}>SVG ANIMATION</span>
+              </div>
+            </foreignObject>
+
           </svg>
         </div>
       </div>
