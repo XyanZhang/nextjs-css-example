@@ -52,6 +52,8 @@ export default function SVGCss() {
         <div className={styles.container}>
           <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
             <rect className={styles.aniRect} />
+            {/* foreignObject */}
+            {/* 在SVG中，foreignObject元素用于将其他非SVG元素（例如HTML）嵌入到SVG图像中。它允许在SVG图像中使用HTML标记和布局。 */}
             <foreignObject width="100%" height="100%">
               <div xmlns="http://www.w3.org/1999/xhtml">
                 <span className={styles.text}>SVG ANIMATION</span>
