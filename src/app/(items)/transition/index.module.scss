@@ -1,0 +1,62 @@
+.g-container {
+  position: relative;
+  ul {
+    position: absolute;
+    left: 124px;
+    opacity: 0;
+    transition: all 0.3s;
+    transition-delay: 1s;
+  }
+}
+.g-button {
+  width: 120px;
+  height: 40px;
+}
+.g-button:hover ul {
+  opacity: 1;
+  transition-delay: 0s;
+}
+.hover-trans {
+  position: relative;
+  width: 200px;
+  height: 64px;
+  line-height: 64px;
+  box-shadow: inset 0 0 0 3px #ddd;
+  text-align: center;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    box-sizing: border-box;
+    transition: height 0.25s, width 0.25s, border-bottom-color 0.25s;
+    transition-delay: 0s, 0.25s, 0.25s;
+  }
+  &:hover::before {
+    width: 200px;
+    height: 64px;
+    border-left: 3px solid #00e2ff;
+    border-bottom: 3px solid #00e2ff;
+  }
+  &::after {
+    right: 0;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    box-sizing: border-box;
+    transition: height 0.25s, width 0.25s, border-bottom-color 0.25s;
+    transition-delay: 0s, 0.25s, 0.25s;
+  }
+  &:hover::after {
+    transition: height 0.25s, width 0.25s, border-top-color 0.25s;
+    transition-delay: 0.5s, 0.75s, 0.75s;
+    width: 200px;
+    height: 64px;
+    border-top: 3px solid #00e2ff;
+    border-right: 3px solid #00e2ff;
+  }
+}
